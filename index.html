@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +22,21 @@ h2{
     margin-left: 200px;
 }
 
-p{
+p.one{
     font-family: fantasy;
     text-align: center;
     font-size: 2em;
     margin-left: 30px;
     margin-right: 30px;
     
+}
+
+p.two{
+    font-family: fantasy;
+    text-align: center;
+    font-size: 1em;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 img{
@@ -41,8 +48,20 @@ img{
 
 video{
     width: 50%;
-    display: block:
+    display: block;
     margin: auto;
+}
+
+audio{
+    margin-left: 200px;
+}
+
+label{
+    padding-left: 200px;
+}
+
+input{
+    margin-left: 200px;
 }
 
 
@@ -53,7 +72,7 @@ video{
     
     <h1>Welcome to Harmony Heights</h1>
     
-    <p>We are Harmony Heights, a band that blends genres to create unique sounds. Our journey through music has been incredible, and we're excited to share it with you.</p>
+    <p class="one">We are Harmony Heights, a band that blends genres to create unique sounds. Our journey through music has been incredible, and we're excited to share it with you.</p>
     
     <img src="https://edube.org/uploads/media/default/0001/04/band-photo.jpg" alt="Harmony Heights Band Photo.">
 
@@ -65,7 +84,9 @@ video{
 
     <h2>Listen to Our Latest Tracks</h2>
 
-    <audio controls src="https://edube.org/uploads/media/default/0001/04/track1.mp3" type="audio/mpeg" style="margin-left: 200px;">
+    <audio controls 
+        <source src="https://edube.org/uploads/media/default/0001/04/track1.mp3" type="audio/mpeg">
+    </audio>
 
     <h2>Watch Our Performances</h2>
 
@@ -75,48 +96,48 @@ video{
     
     <h2>Upcoming Tour Dates</h2>
     
-    <ul>
+    <ul style="margin-left: 200px;">
         <li>March 12,2029, Orlando, FL</li>
         <a href="https://example.com/purchase-tickets-harmony-height orlando">Get Tickets</a>
         <li>March 14,2029, Salt Lake City, UT</li><a href="https://example.com/purchase-tickets-harmony-slc">Get Tickets</a>
     </ul>
     
     <h2>Follow Us</h2>
-    <p>Stay updated with our latest news and releases</p>
+    <p class="two">Stay updated with our latest news and releases</p>
     
-    <a href="https://www.example.com/faceblock/hh">FaceBlock</a>
-    
-    <br>
-    
-    <a href="https://www.example.com/faceblock/hh">Instagrump</a>
+    <a href="https://www.example.com/faceblock/hh" style="margin-left: 200px;">FaceBlock</a>
     
     <br>
     
-    <a href="https://www.example.com/faceblock/hh">Twotter</a>
+    <a href="https://www.example.com/instagrump" style="margin-left: 200px;">Instagrump</a>
+    
+    <br>
+    
+    <a href="https://www.example.com/twotter" style="margin-left: 200px;">Twotter</a>
     
     <h2>Contact Us</h2>
     
     <form>
-        <label for="name">Name</label>
+        <label for="name">Name:</label><br>
         <input type="text" id="name">
         
         <br>
         
-        <label for="email">Email</label>
+        <label for="email">Email:</label><br>
         <input type="email" id="email">
         
         <br>
         
-        <label for="subject">Subject</label>
+        <label for="subject">Subject:</label><br>
         <input type="text" id="subject" name="subject">
         
         <br>
         
-        <label for="message">Message</label>
+        <label for="message">Message:</label>
         
         <br>
         
-        <textarea id="message">message</textarea>
+        <textarea id="message" style="margin-left: 200px;"></textarea>
         
         <br>
         
